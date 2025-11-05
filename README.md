@@ -35,5 +35,5 @@ order-flow signals (microprice and volume imbalance).
 
 ## Intended audience:
 
-Primary: Quantitative researchers, algorithmic trading engineers, and data-driven market microstructure analysts (e.g., trading-competition or market-making coursework).
-Secondary: Data scientists with market data (order books, mid-price, spreads).
+- Primary: Quantitative researchers, algorithmic trading engineers, and data-driven market microstructure analysts (e.g., trading-competition or market-making coursework).
+- Secondary: Data scientists with market data (order books, mid-price, spreads).
