@@ -12,8 +12,8 @@ order-flow signals (microprice and volume imbalance).
 
 ## Files
 
-- `round4_data_visualization.ipynb` - Reproducible notebook with all plots and commentary.
-- `prices_round_3_day_0.csv` - Semicolon-delimited L1–L3 quotes and mid prices for one trading day.
+- `./round4_data_visualization.ipynb` - Reproducible notebook with all plots and commentary.
+- `./imc-data/round4/dataprices_round_3_day_0.csv` - Semicolon-delimited L1–L3 quotes and mid prices for one trading day.
 - `round3-vis` - Contains python files and visualization for round 3 basket visualization
 
 ## Data Schema (selected columns)
