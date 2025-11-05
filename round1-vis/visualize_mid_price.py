@@ -11,7 +11,7 @@ from pathlib import Path
 
 def load_and_combine_data():
     """Load and combine all three CSV files from round1/data directory."""
-    data_dir = Path("imc-data/round1/data")
+    data_dir = Path("../imc-data/round1/data")
     
     # List of CSV files to combine
     csv_files = [

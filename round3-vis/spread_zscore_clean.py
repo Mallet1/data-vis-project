@@ -203,7 +203,7 @@ def main():
     Main function to run the clean visualization
     """
     # File path
-    file_path = './data-vis-project/imc-data/round3/data/prices_round_3_day_0.csv'
+    file_path = '../imc-data/round3/data/prices_round_3_day_0.csv'
     
     print("Loading and processing data...")
     df = load_and_process_data(file_path)
@@ -215,7 +215,7 @@ def main():
     fig, df_filtered = create_clean_visualization(df, z_score_threshold=5.0, start_idx=5000, end_idx=10000)
     
     # Save the plot
-    output_path = './data-vis-project/round3-vis/spread_zscore_clean.png'
+    output_path = '../round3-vis/spread_zscore_clean.png'
     fig.savefig(output_path, dpi=300, bbox_inches='tight')
     print(f"Clean visualization saved to: {output_path}")
     

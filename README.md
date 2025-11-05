@@ -3,40 +3,38 @@ https://github.com/ericcccsliu/imc-prosperity-2?tab=readme-ov-file#round-3%EF%B8
 stanford 2023:  
 https://github.com/ShubhamAnandJain/IMC-Prosperity-2023-Stanford-Cardinal
 
-# Market Microstructure Mini-Study - Basket Fair Value, Mispricing, and Order-Flow Signals
+## 1. Data Set
 
-This repo analyzes intraday pricing and order book dynamics for four instruments:
-**CHOCOLATE, STRAWBERRIES, ROSES,** and **GIFT_BASKET** (a bundle of the first three).
-We explore co-movement, basket fair value, mispricing (spread & z-score), and simple
-order-flow signals (microprice and volume imbalance).
+The dataset comes from the IMC Prosperity trading competition, an algorithmic trading challenge. Data is stored locally in the `imc-data/` directory, organized by round (round1 through round5)
 
-## Files
-- `imc-data` - This folder contains all csv files with the stock data
-- `round4_data_visualization.ipynb` - Reproducible notebook with all plots and commentary.
-- `prices_round_3_day_0.csv` - Semicolon-delimited L1–L3 quotes and mid prices for one trading day.
-- `round3-vis` - Contains python files and visualization for round 3 basket visualization.
-- `mid_price_day_.png` - Contains mid price changes for amethysts and starfruits pertaining to round 0.
-- `mean_reversion_strategy_STARFRUIT_day_-2.png` - Visualization that shows a strategy for trading on starfruits and the profits associated with the strategy. 
+## 2. Questions Answered
 
-## Data Schema (selected columns)
+The visualizations address trading strategy questions:
 
-- `day`, `timestamp` (ms)
-- `product` - {CHOCOLATE, STRAWBERRIES, ROSES, GIFT_BASKET}
-- `bid_price_1..3`, `bid_volume_1..3`
-- `ask_price_1..3`, `ask_volume_1..3`
-- `mid_price`
-- `profit_and_loss`
+- **Co-movement & volatility**: How do assets move relative to each other? Which instruments are more volatile?
+- **Mispricing & mean-reversion**: Is GIFT_BASKET fairly priced relative to its synthetic value (4×CHOCOLATE + 6×STRAWBERRIES + 1×ROSE)? When does the spread z-score revert to mean?
+- **Order-flow pressure**: Does microprice (volume-weighted bid/ask) predict future mid-price movements?
+- **Volume imbalance**: Does top-of-book volume imbalance correlate with short-horizon returns?
+- **Market quality**: What are typical spreads and liquidity depths, and do they widen during mispricings?
 
-## Questions We Answer With Visuals
+## 3. Intended Audience
 
-1. **Co-movement & Volatility** - Rebased price paths to compare trend and variance.
-2. **Fair Value Check** - Does GIFT_BASKET align with a synthetic basket of its components?
-3. **Mispricing & Z-Score** - Spread time series and z-score bands (|z| > 2) for mean-reversion cues.
-4. **Order-Flow Pressure** - Microprice tendencies relative to bid/ask volume weights.
-5. **Impact Curve** - Top-of-book volume imbalance vs. short-horizon future returns.
-6. **Market Quality** - Typical spreads and depth asymmetry when mispricing is elevated.
+**Primary**: Quantitative researchers, algorithmic trading engineers, trading competition participants, and students.
 
-## Intended audience:
+**Secondary**: Data scientists familiar with market data structures (order books, mid-prices, spreads).
 
-- Primary: Quantitative researchers, algorithmic trading engineers, and data-driven market microstructure analysts (e.g., trading-competition or market-making coursework).
-- Secondary: Data scientists with market data (order books, mid-price, spreads).
+## 4. Working Code Artifacts
+
+This repository contains working Jupyter notebooks and Python scripts organized by round:
+
+- **round4-vis/round4_data_visualization.ipynb**: Main Jupyter notebook analyzing Round 4 data with comprehensive visualizations
+- **round3-vis/spread_zscore_clean.py**: Python script visualizing mean reversion strategy for gift basket spread trading
+- **round1-vis/mean_reversion_strategy_visualization.py**: Python script for Round 1 strategy visualization
+- **round1-vis/visualize_mid_price.py**: Python script for mid-price visualization
+
+### Setup and Running
+
+1. **Prerequisites**: Python 3.x with pandas, numpy, matplotlib
+2. **Install dependencies**: `pip install pandas numpy matplotlib`
+
+Data files are expected in `imc-data/round*/data/` directories relative to each script's location.

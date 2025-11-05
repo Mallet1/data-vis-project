@@ -11,7 +11,7 @@ from pathlib import Path
 
 def load_data():
     """Load and combine all three CSV files from round1/data directory."""
-    data_dir = Path("imc-data/round1/data")
+    data_dir = Path("../imc-data/round1/data")
     
     csv_files = [
         "prices_round_1_day_-2.csv",
