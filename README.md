@@ -11,6 +11,7 @@ We explore co-movement, basket fair value, mispricing (spread & z-score), and si
 order-flow signals (microprice and volume imbalance).
 
 ## Files
+- `imc-data` - This folder contains all csv files with the stock data
 - `round4_data_visualization.ipynb` - Reproducible notebook with all plots and commentary.
 - `prices_round_3_day_0.csv` - Semicolon-delimited L1–L3 quotes and mid prices for one trading day.
 - `round3-vis` - Contains python files and visualization for round 3 basket visualization.
