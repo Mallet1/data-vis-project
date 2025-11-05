@@ -11,10 +11,11 @@ We explore co-movement, basket fair value, mispricing (spread & z-score), and si
 order-flow signals (microprice and volume imbalance).
 
 ## Files
-
-- `./round4_data_visualization.ipynb` - Reproducible notebook with all plots and commentary.
-- `./imc-data/round4/dataprices_round_3_day_0.csv` - Semicolon-delimited L1–L3 quotes and mid prices for one trading day.
-- `round3-vis` - Contains python files and visualization for round 3 basket visualization
+- `round4_data_visualization.ipynb` - Reproducible notebook with all plots and commentary.
+- `prices_round_3_day_0.csv` - Semicolon-delimited L1–L3 quotes and mid prices for one trading day.
+- `round3-vis` - Contains python files and visualization for round 3 basket visualization.
+- `mid_price_day_.png` - Contains mid price changes for amethysts and starfruits pertaining to round 0.
+- `mean_reversion_strategy_STARFRUIT_day_-2.png` - Visualization that shows a strategy for trading on starfruits and the profits associated with the strategy. 
 
 ## Data Schema (selected columns)
 
