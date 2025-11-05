@@ -32,3 +32,8 @@ order-flow signals (microprice and volume imbalance).
 4. **Order-Flow Pressure** - Microprice tendencies relative to bid/ask volume weights.
 5. **Impact Curve** - Top-of-book volume imbalance vs. short-horizon future returns.
 6. **Market Quality** - Typical spreads and depth asymmetry when mispricing is elevated.
+
+## Intended audience:
+
+Primary: Quantitative researchers, algorithmic trading engineers, and data-driven market microstructure analysts (e.g., trading-competition or market-making coursework).
+Secondary: Data scientists with market data (order books, mid-price, spreads).
